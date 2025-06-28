@@ -1,14 +1,13 @@
 package com.example.mySpring;
 
-import com.example.mySpring.dependencyInjection.Developer;
-import com.resource.learn.Dev;
+import com.example.mySpring.developer.Developer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.example.mySpring", "com.resource.learn"})
+@ComponentScan(basePackages = {"com.example.mySpring","com.device.computer", "com.resource.learn"})
 
 public class MySpringApplication {
 
