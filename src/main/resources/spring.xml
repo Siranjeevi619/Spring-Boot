@@ -5,7 +5,14 @@
 
     <bean id="dev" class="com.example.mySpring.developer.Developer">
 <!--        <property name="age" value="020"/>-->
-        <constructor-arg value="Steve" index="0" />
+<!--        <constructor-arg value="Steve" index="0" />-->
+        <property name="device" ref="comp" />
+        <property name="age" value="21"/>
+
     </bean>
+    <bean id="lap" class="com.device.computer.Laptop">
+    </bean>
+    <bean id="comp" class="com.device.computer.Desktop"
+    ></bean>
 
 </beans>
